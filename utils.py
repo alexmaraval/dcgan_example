@@ -77,7 +77,7 @@ def test_l(loader, clf, cae):
 
 def train_c(clf, cae, optimizer, loader=loader_train, num_epochs=1):
     clf.train()
-    clf.eval()
+    cae.eval()
 
     for epoch in range(num_epochs):
         clf_train_loss = 0
@@ -103,7 +103,7 @@ def train_c(clf, cae, optimizer, loader=loader_train, num_epochs=1):
 
 def train_l(clf, cae, optimizer, loader=loader_train, num_epochs=1):
     clf.train()
-    clf.eval()
+    cae.eval()
 
     for epoch in range(num_epochs):
         clf_train_loss = 0
